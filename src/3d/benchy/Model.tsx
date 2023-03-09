@@ -3,11 +3,12 @@ import { applyProps, useFrame } from '@react-three/fiber';
 import React, { useMemo, useRef } from 'react';
 import { Mesh } from 'three';
 
+import { modelColor } from '../../theme/colors';
 import { GLTFResult, MeshModel } from '../model';
 
 import model from './benchy.glb';
 
-export const Model: React.FC<MeshModel> = ({ rotate = true, color, ...props }) => {
+export const Model: React.FC<MeshModel> = ({ rotate = true, color = modelColor, ...props }) => {
 	const { scene, materials } = useGLTF(model) as unknown as GLTFResult;
 	useMemo(() => {
 		applyProps(materials.compound, {

@@ -10,7 +10,6 @@ interface DefaultSceneProps extends SceneProps, React.PropsWithChildren {}
 export const DefaultScene: React.FC<DefaultSceneProps> = ({ children }) => (
 	<Canvas resize={{ offsetSize: true }} camera={{ position: [0, 0, 20], fov: 30 }}>
 		<Suspense fallback={<Loader />}>
-			{/* eslint-disable-next-line react/no-unknown-property */}
 			<ambientLight intensity={0.5} />
 			<directionalLight color="white" position={[0, 0, 5]} intensity={0.5} />
 			<directionalLight color="white" position={[0, 0, -5]} intensity={0.5} />
