@@ -1,11 +1,10 @@
 import React from 'react';
 
+import { backgroundColor } from '../../theme/colors';
 import { Skeleton } from '../Skeleton';
 import { Wrapper, WrapperProps } from '../Wrapper';
 
 const DynamicScene = React.lazy(() => import('./Scene'));
-
-const backgroundColor = '#E1F0F9';
 
 export const Benchy3d: React.FC<WrapperProps> = ({
 	color,
