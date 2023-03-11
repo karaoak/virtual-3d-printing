@@ -1,6 +1,6 @@
 {
 	"name": "virtual-3d-printing",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"private": true,
 	"scripts": {
 		"prepare": "husky install",
@@ -15,6 +15,7 @@
 	"dependencies": {
 		"@emotion/react": "^11.10.6",
 		"@emotion/styled": "^11.10.6",
+		"@mui/icons-material": "^5.11.11",
 		"@mui/material": "^5.11.12",
 		"@react-three/drei": "^9.57.1",
 		"@react-three/fiber": "^8.12.0",
