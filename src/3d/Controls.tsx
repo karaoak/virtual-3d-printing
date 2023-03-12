@@ -11,7 +11,7 @@ export const Controls: React.FC = () => {
 			color="default"
 			size="small"
 			aria-label="toggle-rotate"
-			sx={{ position: 'absolute', bottom: 22, left: 12, opacity: 0.3 }}
+			sx={{ position: 'absolute', bottom: 22, left: 22, opacity: 0.3 }}
 			onClick={toggleRotate}
 		>
 			{rotate ? <PauseRounded /> : <PlayArrowRounded />}

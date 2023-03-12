@@ -1,4 +1,4 @@
 declare module '*.glb' {
-	const content: any;
+	const content: never;
 	export default content;
 }
