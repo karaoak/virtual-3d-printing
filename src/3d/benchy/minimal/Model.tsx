@@ -7,14 +7,14 @@ import { GLTFResult, MeshModel } from '../../model';
 import model from '../benchy.glb';
 
 export const Model: React.FC<MeshModel> = ({ rotate = true, ...props }) => {
-	const { scene } = useGLTF(model) as unknown as GLTFResult;
-	const ref = useRef<Mesh>(null!);
+  const { scene } = useGLTF(model) as unknown as GLTFResult;
+  const ref = useRef<Mesh>(null!);
 
-	useFrame(() => {
-		if (rotate) {
-			ref.current.rotation.y += 0.01;
-		}
-	});
+  useFrame(() => {
+    if (rotate) {
+      ref.current.rotation.y += 0.01;
+    }
+  });
 
-	return <primitive ref={ref} {...props} object={scene} />;
+  return <primitive ref={ref} {...props} object={scene} />;
 };

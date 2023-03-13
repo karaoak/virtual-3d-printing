@@ -9,7 +9,7 @@ import { Benchy3d } from './3d/benchy/Benchy3d';
 import { backgroundColor } from './theme/colors';
 
 export const App: React.FC = () => (
-	<div style={{ width: '100vw', height: '100vh', backgroundColor }}>
-		<Benchy3d />
-	</div>
+  <div style={{ width: '100vw', height: '100vh', backgroundColor }}>
+    <Benchy3d />
+  </div>
 );
