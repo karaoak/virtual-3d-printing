@@ -1,10 +1,7 @@
 module.exports = {
-	parser: '@typescript-eslint/parser',
 	extends: [
+		'react-app',
 		'plugin:@typescript-eslint/recommended',
-		'plugin:import/recommended',
-		'plugin:react/recommended',
-		'plugin:prettier/recommended',
 		'plugin:import/typescript',
 		'prettier',
 	],
